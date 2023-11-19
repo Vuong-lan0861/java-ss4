@@ -46,18 +46,18 @@ public class QuadraticEquation {
 
     //    Khởi tạo hàm getDiscriminant()
     public double getDiscriminant() {
-        return b * b - 4 * a * c;
+        return (b * b - 4 * a * c);
     }
 
 
     //    Khởi tạo hàm getRoot1()
     public double getRoot1() {
-        double rate = (-b + Math.pow((b * b - 4 * a * b), 0.5) / (2 * a));
+        double rate = (-b + Math.pow((b * b - 4 * a * c), 0.5) / (2 * a));
         return (double) Math.round(rate * 10) / 10;
     }
 
     public double getRoot2() {
-        double rate = (-b - Math.pow((b * b - 4 * a * b), 0.5) / (2 * a));
+        double rate = (-b - Math.pow((b * b - 4 * a * c), 0.5) / (2 * a));
         return (double) Math.round(rate * 10) / 10;
     }
 
